@@ -1,10 +1,12 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  "projectId": 'sjnqhg',
+  "projectId": 'Hotel Adictin Automation',
   "viewportWidth": 1280,
   "viewportHeight": 800,
+  reporter: '@shelex/cypress-allure-plugin',
   e2e: {
+    baseUrl: 'https://adactinhotelapp.com/index.php',
     setupNodeEvents(on, config) {
       // implement node event listeners here
      
@@ -19,6 +21,10 @@ module.exports = defineConfig({
     screenshots: true,
   
     screenshotOnRunFailure: true,
+    
+      
+    
+    
     // env: {
     //   //baseURL1: 'https://extaz-oci.aetna.com/pocui/',
     //   //baseURL2: 'https://proview.caqh.org/Login?Type=PR',

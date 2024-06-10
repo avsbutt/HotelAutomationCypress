@@ -1,4 +1,6 @@
 {
 "UserName":"avsbutt1",
-"Password":"8Q5142"
+"Password":"8Q5142",
+"InvalidUserName":"wronguser",
+"InvalidPassword":"wrongpassword"
 }

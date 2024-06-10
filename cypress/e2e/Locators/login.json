@@ -1,8 +1,9 @@
 {
-    "Login":
+    "LoginLocators":
     {
-        "UserName":"//input[@id='username']",
-        "Password":"//input[@id='password']",
-        "LoginButton":"//input[@id='login']"
+        "UserNameLoc":"//input[@id='username']",
+        "PasswordLoc":"//input[@id='password']",
+        "LoginButtonLoc":"//input[@id='login']",
+        "InvalidErrorMsg":"div[class='auth_error'] b"
     }
 }

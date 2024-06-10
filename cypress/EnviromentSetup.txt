@@ -4,3 +4,4 @@ run this cmd to install CYPRESS ... npm install cypress
 run this command to run the NPM cmd locally on system ... npx cypress -v
 run this command to verify CYPRESS dependecies... npx cypress verify
 Open Cypress Command ... npx Cypress open
+Create Locators, Fixtures, Pages, TestCases, screenshots, Videos, and fixtures folder in e2e.
