@@ -39,4 +39,5 @@ Cypress.Commands.add('assertAll', function () {
 });
 
 
+import 'cypress-iframe';
 

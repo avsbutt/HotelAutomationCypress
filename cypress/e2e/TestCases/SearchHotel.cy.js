@@ -1,5 +1,7 @@
 /// <reference types="Cypress"/>
 //import 'cypress-soft-assertions';
+import 'cypress-iframe';
+
 
 const SearchHotelFun = require("../Locators/SearchHotel.json");
 import { SearchHotelClass } from "../Pages/SearchPage";
@@ -47,19 +49,41 @@ describe("Search Hotel", () => {
     });
 
     it("TC06: User can View Booked Hotel and Cancel the Order", () => {
-        cy.then(() => {
+        
             const orderID = Cypress.env('orderID');
             if (orderID) {
                 cy.log(`Order ID exists in Cypress environment: ${orderID}`);
                 BookingHotelForm.BookedHotel();
                 BookingHotelForm.SearchOrder(orderID);
+
+                // Log the number of checkboxes
+                cy.xpath('//input[@name="ids[]"]').should('be.visible').its('length').then((length) => {
+                cy.log('Total Search Result: ' + length);
+                expect(length).to.equal(1);
+                })
+
+                // Log the text of the element
+                cy.xpath('//label[@id="search_result_error"]').invoke('text').then((text) => {
+                cy.log('Text of the element:', text);
+                });
+
+                cy.xpath('//input[@name="ids[]"]').click();
+                BookingHotelForm.CancelBtn();
+
+
+                // Click OK from the Alert popup
+                cy.on('window:confirm', (str) => {
+                cy.log('Alert dialog message:', str);      // Log the message displayed in the alert dialog
+                return true;                               // return false; // To Click Cancel
+                });
+
             } else {
                 cy.log('Order ID does not exist in Cypress environment');
                 throw new Error('Order ID does not exist in Cypress environment');
             }
         });
     });
-});
+
 
 
 

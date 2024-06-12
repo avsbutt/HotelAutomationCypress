@@ -2,7 +2,9 @@
     "BookingLocators":
     {
         "BookedLoc":"//a[normalize-space()='Booked Itinerary']",
-        "SearchOrderLoc":"//input[@id='order_id_text']"
+        "SearchOrderLoc":"//input[@id='order_id_text']",
+        "GoBtn":"//input[@id='search_hotel_id']",
+        "CancelBtn":"//input[@name='cancelall']"
 
     }
     
