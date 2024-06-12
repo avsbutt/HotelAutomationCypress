@@ -4,7 +4,7 @@ module.exports = defineConfig({
   "projectId": 'Hotel Adictin Automation',
   "viewportWidth": 1280,
   "viewportHeight": 800,
-  reporter: '@shelex/cypress-allure-plugin',
+  //reporter: '@shelex/cypress-allure-plugin',
   e2e: {
     baseUrl: 'https://adactinhotelapp.com/index.php',
     setupNodeEvents(on, config) {
@@ -12,6 +12,8 @@ module.exports = defineConfig({
      
     },
     fixturesFolder: 'cypress/e2e/fixtures',
+    tsc: 'cypress/support/commands.ts',
+
    
     video: true,
     videosFolder: 'cypress/e2e/videos',

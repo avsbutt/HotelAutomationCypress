@@ -1,18 +1,24 @@
 /// <reference types="Cypress"/>
 
-import { LoginPage } from "../Pages/loginPage";
-const loginForm = new LoginPage();
-describe("Hotel Login", () => {
-    it.skip("TC01; Verify that Hotel addictin Login Successfully", () =>{
-        cy.visit('/');
+import { LoginPageClass } from "../Pages/loginPage";
+const loginForm = new LoginPageClass();
+
+ describe("Hotel Login", () => {
+   
+    it("TC01: Verify that Hotel addictin Login Successfully", () =>{
+        cy.visit('https://adactinhotelapp.com/index.php');
 
         cy.fixture('LoginData').then((data) => {
             loginForm.UserName(data.UserName);
             loginForm.Password(data.Password);
             loginForm.LoginButton();
+            loginForm.Welcometxt();
+            cy.log('User is Logged In Successfully with Username: ' + data.UserName);
           });
     })
-    it.only("TC02: Verify that user cannot logged in with Invalid Credentials", ()=>{
+ })
+
+    it.skip("TC02: Verify that user cannot logged in with Invalid Credentials", ()=>{
         cy.visit("https://adactinhotelapp.com/index.php");
         cy.fixture('LoginData').then((data) => {
             loginForm.InvalidUserName(data.InvalidUserName);
@@ -23,4 +29,4 @@ describe("Hotel Login", () => {
             loginForm.InvalidErrorMsg();
         })
     })
-})
+    

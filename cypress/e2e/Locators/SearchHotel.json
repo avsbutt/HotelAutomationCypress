@@ -1,0 +1,26 @@
+{
+    "SearchHotelLocators":
+    {
+        "LocationLoc":"//select[@id='location']",
+        "HotelsLoc":"//select[@id='hotels']",
+        "RoomTypeLoc":"//select[@id='room_type']",
+        "NoOfRoomsLoc":"//select[@id='room_nos']",
+        "CheckInLoc":"//input[@id='datepick_in']",
+        "CheckOutLoc":"//input[@id='datepick_out']",
+        "AdultsLoc":"//select[@id='adult_room']",
+        "ChildrenLoc":"//select[@id='child_room']",
+        "SearchBtnLoc":"//input[@id='Submit']",
+        "ResetBtnLoc":"//input[@id='Reset']",
+        "HotelSelectRadioBtn":"//input[@id='radiobutton_0']",
+        "ContinueBtn":"//input[@id='continue']",
+        "FirstNameLoc":"//input[@id='first_name']",
+        "LastNameLoc":"//input[@id='last_name']",
+        "BillingAddressLoc":"//textarea[@id='address']",
+        "CCno":"//input[@id='cc_num']",
+        "CCType":"//select[@id='cc_type']",
+        "ExpiryMonth":"//select[@id='cc_exp_month']",
+        "ExpiryYear":"//select[@id='cc_exp_year']",
+        "CVVno":"//input[@id='cc_cvv']",
+        "BookBtn":"//input[@id='book_now']"
+    }
+}

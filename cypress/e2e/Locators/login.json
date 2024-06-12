@@ -4,6 +4,7 @@
         "UserNameLoc":"//input[@id='username']",
         "PasswordLoc":"//input[@id='password']",
         "LoginButtonLoc":"//input[@id='login']",
-        "InvalidErrorMsg":"div[class='auth_error'] b"
+        "InvalidErrorMsgLoc":"div[class='auth_error'] b",
+        "WelcomeTxtLoc":"//td[contains(text(),'Welcome to Adactin Group of Hotels')]"
     }
 }

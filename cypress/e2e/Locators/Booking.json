@@ -1,0 +1,9 @@
+{
+    "BookingLocators":
+    {
+        "BookedLoc":"//a[normalize-space()='Booked Itinerary']",
+        "SearchOrderLoc":"//input[@id='order_id_text']"
+
+    }
+    
+}
