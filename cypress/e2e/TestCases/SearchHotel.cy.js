@@ -20,17 +20,18 @@ describe("Search Hotel", () => {
         SearchHotelForm.LocationSelect();
         SearchHotelForm.HotelsSelect();
         SearchHotelForm.RoomType();
+        //ASSertion....
         SearchHotelForm.NoOfRooms();
         SearchHotelForm.CheckIn();
         SearchHotelForm.CheckOut();
         SearchHotelForm.AdultsRoom();
         SearchHotelForm.ChildRoom();
         SearchHotelForm.SearchBtn();
-        
+
         // HOTEL SELECT PAGE
         SearchHotelForm.HotelSelectRadioBtn();
         SearchHotelForm.ContinueBtn();
-        
+ 
         // NEXT PAGE
         SearchHotelForm.FirstName();
         SearchHotelForm.LasttName();
@@ -49,8 +50,9 @@ describe("Search Hotel", () => {
     });
 
     it("TC06: User can View Booked Hotel and Cancel the Order", () => {
-        
+
             const orderID = Cypress.env('orderID');
+            
             if (orderID) {
                 cy.log(`Order ID exists in Cypress environment: ${orderID}`);
                 BookingHotelForm.BookedHotel();
@@ -83,7 +85,6 @@ describe("Search Hotel", () => {
             }
         });
     });
-
 
 
 
