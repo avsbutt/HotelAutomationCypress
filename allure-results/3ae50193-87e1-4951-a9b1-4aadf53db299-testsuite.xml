@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718382500472' stop='1718382509888'>
+    <name>Booking Hotel</name>
+    <title>Booking Hotel</title>
+    <test-cases>
+        <test-case start='1718382509214' status='broken' stop='1718382509888'>
+            <name>TC06: User can View Booked Hotel and Cancel the Order</name>
+            <title>TC06: User can View Booked Hotel and Cancel the Order</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Order ID does not exist in Cypress environment</message>
+                <stack-trace>Error: Order ID does not exist in Cypress environment
+                    at Context.eval (webpack://hotelautomationcypress/./cypress/e2e/TestCases/BookedHotel.cy.js:20:22)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

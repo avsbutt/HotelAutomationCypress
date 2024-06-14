@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"unknown","Fri Jun 14 21:28:33 PKT 2024","Thu Jan 01 05:00:00 PKT 1970","-1718382513378","","","","","TC02: Verify that user cannot logged in with Invalid Credentials","TC02: Verify that user cannot logged in with Invalid Credentials",""
+"broken","Fri Jun 14 21:29:04 PKT 2024","Fri Jun 14 21:29:10 PKT 2024","5623","","Search Hotel","","Search Hotel","TC06: User can View Booked Hotel and Cancel the Order","TC06: User can View Booked Hotel and Cancel the Order",""
+"broken","Fri Jun 14 21:28:29 PKT 2024","Fri Jun 14 21:28:29 PKT 2024","674","","Booking Hotel","","Booking Hotel","TC06: User can View Booked Hotel and Cancel the Order","TC06: User can View Booked Hotel and Cancel the Order",""
+"passed","Fri Jun 14 21:28:33 PKT 2024","Fri Jun 14 21:28:45 PKT 2024","12019","","Hotel Login","","Hotel Login","TC01: Verify that Hotel addictin Login Successfully","TC01: Verify that Hotel addictin Login Successfully",""
+"passed","Fri Jun 14 21:28:48 PKT 2024","Fri Jun 14 21:29:04 PKT 2024","15778","","Search Hotel","","Search Hotel","TC04: User can Search Hotel For Booking","TC04: User can Search Hotel For Booking",""

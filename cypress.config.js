@@ -23,10 +23,14 @@ module.exports = defineConfig({
     screenshots: true,
   
     screenshotOnRunFailure: true,
+
+
+   
+    reporter: 'mocha-allure-reporter',
+    reporterOptions: {
+      targetDir: 'allure-results'
     
-      
-    
-    
+    }
     // env: {
     //   //baseURL1: 'https://extaz-oci.aetna.com/pocui/',
     //   //baseURL2: 'https://proview.caqh.org/Login?Type=PR',

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718382513378' stop='1718382525397'>
+    <name>Hotel Login</name>
+    <title>Hotel Login</title>
+    <test-cases>
+        <test-case start='1718382513378' status='passed' stop='1718382525397'>
+            <name>TC01: Verify that Hotel addictin Login Successfully</name>
+            <title>TC01: Verify that Hotel addictin Login Successfully</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
